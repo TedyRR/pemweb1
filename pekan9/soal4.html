@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengerjaan Praktikum 9.4</title>
+</head>
+<body>
+    <h2>Hitung Jumlah Bilangan</h2>
+    <form>
+        Angka pertama : <input type="number" id="angka1">
+        <br>
+        Angka kedua : <input type="number" id="angka2">
+        <br>
+        <input type="button" value="Hitung" onclick="hitung();">
+        <br>
+        Jumlah angka : <input type="text" id="jumlah">
+    </form>
+
+    <script>
+        function hitung() {
+            let a = document.getElementById("angka1").value;
+            let b = document.getElementById("angka2").value;
+            let t = parseInt(a) + parseInt(b);
+
+            document.getElementById("jumlah").value = t;
+        }
+    </script>
+</body>
+</html>
